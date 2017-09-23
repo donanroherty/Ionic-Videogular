@@ -1,6 +1,9 @@
 ## Ionic-Videogular
 
-This is a simple integration of Videogular 2 with Ionic 3.
+This is a simple integration of Videogular2 with Ionic3.
+
+Uses solution by "dbertels" to make Videogular fonts available to Ionic.  
+https://forum.ionicframework.com/t/solved-ionic-and-videogular-2-scss/89454/9
 
 Install NodeJS
 https://nodejs.org/en/
