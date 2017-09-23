@@ -1,5 +1,5 @@
 {
-    "name": "Ionic-Videogular",
+    "name": "Ionic-Videogular-2",
     "version": "0.0.1",
     "author": "Ionic Framework",
     "homepage": "http://ionicframework.com/",
@@ -25,6 +25,7 @@
         "@ionic-native/status-bar": "3.12.1",
         "@ionic/storage": "2.0.1",
         "cordova-android": "^6.2.3",
+        "cordova-plugin-crosswalk-webview": "^2.3.0",
         "cordova-plugin-device": "^1.1.4",
         "cordova-plugin-splashscreen": "^4.0.3",
         "cordova-plugin-statusbar": "^2.2.2",
@@ -34,10 +35,12 @@
         "ionicons": "3.0.0",
         "rxjs": "5.4.0",
         "sw-toolbox": "3.6.0",
+        "videogular2": "^5.5.1",
         "zone.js": "0.8.12"
     },
     "devDependencies": {
         "@ionic/app-scripts": "2.1.4",
+        "@types/core-js": "^0.9.43",
         "typescript": "2.3.4"
     },
     "description": "An Ionic project",
@@ -47,10 +50,21 @@
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
             "cordova-plugin-whitelist": {},
-            "ionic-plugin-keyboard": {}
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "23+",
+                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+                "XWALK_MODE": "embedded",
+                "XWALK_MULTIPLEAPK": "true"
+            }
         },
         "platforms": [
             "android"
         ]
+    },
+    "config": {
+        "ionic_sass": "./src/config/sass.config.js",
+        "ionic_copy": "./src/config/copy.config.js"
     }
 }
